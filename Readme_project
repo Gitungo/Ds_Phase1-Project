@@ -1,0 +1,117 @@
+Aviation Safety Risk Analysis
+
+## 1. Business Understanding
+
+### **Business Context**
+The company is launching a new **Aviation Division** aimed at expanding operations through the acquisition and management of aircraft.  
+To ensure that investments are both safe and cost-effective, leadership seeks to leverage **data-driven safety insights** derived from historical aircraft accident and fatality data.
+
+### **Business Problem**
+Aircraft procurement and operational decisions involve significant **financial, regulatory, and safety risks**. Without clear insight into historical accident trends, the company risks investing in aircraft models or operational types that have poor safety records, leading to:
+- Increased likelihood of operational incidents  
+- Higher maintenance and insurance costs  
+- Potential reputational damage  
+
+The central business challenge is to **identify aircraft types, makes, and operational categories with historically lower accident and fatality risks**, allowing for evidence-based purchasing and safety management.
+
+### **Business Objectives**
+The primary goals of this project are to:
+1. Analyze historical aviation accident data by aircraft make, model, and flight purpose.  
+2. Identify high-risk and low-risk aircraft categories based on accident frequency and fatality severity.  
+3. Provide actionable insights to support safe and efficient procurement and operational planning.  
+4. Build a foundation for future **risk-based decision-making** by normalizing accident data against exposure metrics (e.g., flight hours or fleet size).
+
+### **Intended Outcome**
+This project aims to produce a comprehensive safety risk profile for various aircraft types and manufacturers, enabling:
+- Smarter, safer investment in aircraft procurement  
+- Data-supported operational and insurance planning  
+- Improved safety management and regulatory compliance  
+
+## 2. Data Understanding
+
+### **Data Source**
+The dataset consists of **historical aircraft accident records**, containing details such as:
+- Aircraft make and model  
+- Number of engines and engine type  
+- Weather conditions at the time of the accident  
+- Accident severity (fatalities, damage level, etc.)  
+- Flight purpose (personal, commercial, instructional, etc.)  
+- Location and date of occurrence  
+
+The data is sourced from publicly available aviation safety databases.
+
+### **Data Quality Overview**
+- **Missing Values:** Some fields, such as weather data or aircraft configuration, may contain null or incomplete entries.  
+- **Data Cleaning:** Inconsistent manufacturer names and categorical encodings were standardized.  
+- **Time Frame:** Covers multiple years to ensure sufficient representation of various aircraft makes and conditions.
+
+## 3. Data Preparation
+
+Key steps performed during data preparation include:
+1. **Data Cleaning:** Removal of duplicates, correction of typographical errors in aircraft make/model names, and handling of missing data.  
+2. **Feature Engineering:** Creation of new variables such as accident severity categories and weather condition groupings.  
+3. **Data Transformation:** Normalization and aggregation of relevant attributes for statistical comparison.  
+4. **Filtering:** Focus on fixed-wing, single- and multi-engine aircraft for analytical consistency.  
+
+## 4. Exploratory Data Analysis (EDA)
+
+The exploratory analysis focused on identifying patterns and relationships, including:
+- Accident distribution by aircraft make and model  
+- Impact of number of engines on accident frequency  
+- Weather condition influence on accident severity  
+- Comparison of accidents under visual vs. instrument meteorological conditions  
+- Identification of aircraft makes with consistently lower accident rates  
+
+Visualizations such as bar charts, scatter plots, and heatmaps were used to support interpretation.
+
+## 5. Findings & Insights
+
+Key insights from the analysis include:
+- **Cessna aircraft** show a higher frequency of accidents, possibly linked to mass production and the availability of counterfeit parts.  
+- **Schweizer**, **Maule**, **Stinson**, and **North American** aircraft demonstrate lower accident rates but are less available and may have higher acquisition costs.  
+- **Multi-engine aircraft** experience fewer accidents than single-engine models under both favorable and adverse weather conditions, highlighting the role of engine redundancy in safety.  
+- Accidents occurring under **good visibility** conditions tend to result in less severe damage compared to those in poor weather requiring instrument flight.  
+
+These insights support a strategy focused on acquiring **multi-engine, low-risk makes** and prioritizing operations in favorable meteorological conditions.
+
+## 6. Conclusion
+
+The analysis concludes that:
+- **Engine configuration** is a stronger predictor of accident likelihood than weather conditions.  
+- **Aircraft make and model selection** significantly influences operational safety outcomes.  
+- **Environmental and visibility conditions** impact accident severity but are secondary to aircraft design and redundancy factors.  
+
+Overall, a **data-driven procurement approach** can substantially improve operational safety, reduce long-term maintenance costs, and strengthen the company’s aviation safety reputation.
+
+## 7. Recommendations
+
+1. **Prioritize multi-engine aircraft** for acquisition and operations.  
+2. **Avoid makes with high historical accident rates** (e.g., Cessna) unless recent safety improvements are verified.  
+3. **Develop a continuous safety monitoring system** leveraging real-time data for future decision support.  
+4. **Establish partnerships** with manufacturers with strong safety track records and verified parts supply chains.
+
+
+## 8. Tools & Technologies Used
+
+- **Python** (Pandas, NumPy, Matplotlib, Seaborn)  
+- **Jupyter Notebook** for analysis and visualization  
+- **Tableau** for interactive dashboards  
+- **Excel / CSV** for initial data inspection  
+- **Git & GitHub** for version control and collaboration  
+
+## 9. Future Work
+
+Future development will include:
+- Building an **interactive Aviation Safety Dashboard** reflective of findings
+
+---
+
+** Gitungo Wangari.
+** Data Scientist
+
+
+
+
+
+
+
